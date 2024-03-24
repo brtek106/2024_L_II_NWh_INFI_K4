@@ -6,7 +6,7 @@ from flask import request
 moje_imie = "Bartek"
 msg = "Hello World!"
 
-@app.route('/')
+@app.route('/') 
 def index():
     output = request.args.get('output')
     if not output:
